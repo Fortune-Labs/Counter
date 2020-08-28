@@ -47,6 +47,8 @@ class Total extends Component {
   totalValue = () => this.props.getData.reduce((a, b) => a + b.value, 0);
 
   render() {
+    // const { getData } = this.props;
+    // console.log(getData)
     return (
       <div className="counter">
         <b>Total Value: {this.totalValue()}</b>
@@ -90,7 +92,6 @@ class App extends Component {
             onIncrement={this.onIncrement.bind(this, counter)}
           />
         ))}
-        <Total getData={this.state.data} />
       </div>
     );
   }

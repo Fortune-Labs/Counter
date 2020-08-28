@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
 // state data for 3 counters
-// const data = [
-//   { id: 1, value: 0 },
-//   { id: 2, value: 0 },
-//   { id: 3, value: 0 },
-//   { id: 4, value: 0 },
-// ];
+const data = [
+  { id: 1, value: 0 },
+  { id: 2, value: 0 },
+  { id: 3, value: 0 },
+  { id: 4, value: 0 },
+];
 
 //counter component
 class Counter extends Component {
@@ -47,6 +47,8 @@ class Total extends Component {
   totalValue = () => this.props.getData.reduce((a, b) => a + b.value, 0);
 
   render() {
+    // const { getData } = this.props;
+    // console.log(getData)
     return (
       <div className="counter">
         <b>Total Value: {this.totalValue()}</b>
@@ -90,7 +92,6 @@ class App extends Component {
             onIncrement={this.onIncrement.bind(this, counter)}
           />
         ))}
-        <Total getData={this.state.data} />
       </div>
     );
   }
