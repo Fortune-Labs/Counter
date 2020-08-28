@@ -5,7 +5,6 @@ const data = [
   { id: 1, value: 0 },
   { id: 2, value: 0 },
   { id: 3, value: 0 },
-  { id: 4, value: 0 },
 ];
 
 // Counter Component
@@ -46,7 +45,7 @@ class Counter extends Component {
           >
             -
           </button>
-
+          //I call the function passed
           <button
             className="button is-success is-small"
             onClick={this.onIncrement}
