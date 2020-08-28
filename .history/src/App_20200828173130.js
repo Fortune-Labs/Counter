@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 // state data for 3 counters
-const data = [
-  { id: 1, value: 0 },
-  { id: 2, value: 0 },
-  { id: 3, value: 0 },
-  { id: 4, value: 0 },
-];
 
 //counter component
 class Counter extends Component {
